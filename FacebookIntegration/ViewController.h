@@ -7,8 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Social/Social.h>
+#import <Accounts/Accounts.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    SLComposeViewController *SLComposer;
+}
+
+
+- (IBAction)postTheFacebook:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 
 @end

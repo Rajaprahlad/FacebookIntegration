@@ -14,6 +14,9 @@
 		A747D50A1E26A55000FCFB81 /* FacebookIntegration.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A747D5081E26A55000FCFB81 /* FacebookIntegration.xcdatamodeld */; };
 		A747D50C1E26A55000FCFB81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A747D50B1E26A55000FCFB81 /* Assets.xcassets */; };
 		A747D50F1E26A55000FCFB81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A747D50D1E26A55000FCFB81 /* LaunchScreen.storyboard */; };
+		A747D5181E26AC9100FCFB81 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A747D5171E26AC9100FCFB81 /* Accounts.framework */; };
+		A747D51A1E26AC9C00FCFB81 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A747D5191E26AC9C00FCFB81 /* Social.framework */; };
+		A747D51C1E27180B00FCFB81 /* hmHelpCat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A747D51B1E27180B00FCFB81 /* hmHelpCat.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		A747D50B1E26A55000FCFB81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A747D50E1E26A55000FCFB81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A747D5101E26A55000FCFB81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A747D5171E26AC9100FCFB81 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		A747D5191E26AC9C00FCFB81 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		A747D51B1E27180B00FCFB81 /* hmHelpCat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hmHelpCat.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A747D51A1E26AC9C00FCFB81 /* Social.framework in Frameworks */,
+				A747D5181E26AC9100FCFB81 /* Accounts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,8 +52,10 @@
 		A747D4F01E26A54F00FCFB81 = {
 			isa = PBXGroup;
 			children = (
+				A747D51B1E27180B00FCFB81 /* hmHelpCat.jpg */,
 				A747D4FB1E26A55000FCFB81 /* FacebookIntegration */,
 				A747D4FA1E26A55000FCFB81 /* Products */,
+				A747D5161E26AC9100FCFB81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +90,15 @@
 				A747D4FD1E26A55000FCFB81 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A747D5161E26AC9100FCFB81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A747D5191E26AC9C00FCFB81 /* Social.framework */,
+				A747D5171E26AC9100FCFB81 /* Accounts.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +162,7 @@
 			files = (
 				A747D50F1E26A55000FCFB81 /* LaunchScreen.storyboard in Resources */,
 				A747D50C1E26A55000FCFB81 /* Assets.xcassets in Resources */,
+				A747D51C1E27180B00FCFB81 /* hmHelpCat.jpg in Resources */,
 				A747D5071E26A55000FCFB81 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

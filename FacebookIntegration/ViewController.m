@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import <Social/Social.h>
+#import <Accounts/Accounts.h>
 @interface ViewController ()
 
 @end
@@ -26,4 +27,12 @@
 }
 
 
+- (IBAction)postTheFacebook:(id)sender {
+    SLComposer = [[SLComposeViewController alloc] init];
+    SLComposer = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+   [SLComposer setInitialText:[NSString stringWithFormat:@"%@", self.label.text]];
+    [SLComposer addImage:self.imageView.image];
+    
+    [self presentViewController:SLComposer animated:YES completion:NULL];
+}
 @end
